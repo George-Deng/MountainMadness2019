@@ -7,21 +7,22 @@ def charRace():
     boolean = True
     while boolean == True:
         x = input()
-        x = x.lower()
-        
+        x = x.lower()        
         if x == "human":
-            print("You chose Human!")
+            output = "You chose Human!"
             boolean = False
         elif x == "elf":
-            print("You chose Elf!")
+            output = "You chose Elf!"
             boolean = False
         elif x == "dwarf":
-            print("You chose Dwarf!")
+            output = "You chose Dwarf!"
             boolean = False
         else:
             print("Please enter a valid input.")
 
-charRace()
+    return output
+
+print(charRace())
 
 #con: health and defence
 #dex: hit chances
