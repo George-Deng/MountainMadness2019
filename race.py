@@ -22,7 +22,3 @@ def charRace():
 
     return output
 
-print(charRace())
-
-#con: health and defence
-#dex: hit chances
