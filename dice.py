@@ -2,13 +2,9 @@ import random
 
 
 def roll(dicenum, numroll):
-    roll = 0
-    for (numroll):
-        roll += random.randint(0,int(dicenum[1]))
-    return roll
+    val = 0
+    for x in range(numroll):
+        val += random.randint(1,dicenum)
+        print(val)
+    return val
 
-
-
-        
-        
-    
