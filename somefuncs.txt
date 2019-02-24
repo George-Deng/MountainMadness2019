@@ -52,7 +52,7 @@ def P_3PTHS():
 	elif (ans == 'R')
 		next_prompt = P_PTH3()
 	else
-		next_prompt = P_FNLBS()
+		next_prompt = P_FNLITR()
 
 def P_FNLITR()
 	print('\nOnce you tried 3 paths, you realize there is another path...')
