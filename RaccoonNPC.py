@@ -10,7 +10,7 @@ strtmod = -2
 dexmod = 3
 conmod = -1
 
-hitpoints = 12 + conmod
+hitpoints = 10 + conmod
 
 race = "Raccoon"
 
@@ -18,4 +18,4 @@ class1 = "Mammal"
 
 name = "Chuck" ##<-- default
 
-ac = 5 + dex
+weapon = "Claws (Light, 1d3)"
