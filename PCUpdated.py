@@ -18,4 +18,4 @@ class1 = "Student"
 
 name = "A Real Human: Mark Zuckerberg" ##<-- default
 
-ac = 12
+ac = 12 + dex
