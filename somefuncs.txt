@@ -1,0 +1,62 @@
+def P_WCHPTH():
+	print('\nYou continue on your harsh journey up the mountain, but alas you run into your first obstacle!')
+	print('Your going to have to take a detour!')
+	print('You see one path leading upwards that might lead to a group of mutated racoons!(Path A)')
+	print('The other path leads down back the mountain where you started!(Path B)')
+
+	decision = input("Which path will you take? ")
+	If (decision == 'B')
+		next_prompt = P_OPTB()
+	elif (decision == 'A')
+		next_prompt = P_OPTA()
+	else:
+		next_prompt = PWCHPTH()
+
+def P_OPTB():
+	print('You are a coward and the racoons can smell your cowardness and come eat you!')
+    	print('Gameover!')
+	next_prompt = P_DIED
+def P_OPTA():
+	go back to combat
+
+def P_PTH1():
+	print('\nSadly your greatest fear has come true!')
+        print('The SFU construction team is blocking your way!')
+        print('You must find another path!')
+        print('Time is of the essence, you must hurry!\n')
+	next_prompt = P_3PTHS()
+
+def P_PTH2():
+	print('\nSurprise!')
+        print('The SFU construction team is blocking your way!')
+        print('You must find another path!')
+        print('Time is of the essence, you must hurry!\n')
+	next_prompt = P_3PTHS()
+
+def P_PTH3():
+	print('\nYou hear the ever-present drilling sounds grow louder!')
+        print('The SFU construction team is blocking your way!')
+        print('You must find another path!')
+        print('Time is of the essence, you must hurry!\n')
+	next_prompt = P_3PTHS()
+
+def P_3PTHS():
+	print('\nOnce you make your way through the racoons, you continue your expedition to the top of SFU.')
+	print('After what felt like hours fighting through the snow, you finally make it to the convocation mall!')
+	print('you encounter 3 different paths; left, right or center')
+	ans = input('Will you turn Left, Right or Center?(L or R or C): ')
+	if (ans == 'L')
+		next_prompt = P_PTH1()
+	elif (ans == 'C')
+		next_prompt = P_PTH2()
+	elif (ans == 'R')
+		next_prompt = P_PTH3()
+	else
+		next_prompt = P_FNLBS()
+
+def P_FNLITR()
+	print('\nOnce you tried 3 paths, you realize there is another path...')
+	print('You quickly rush over to it and find your way to your class\n')
+	print_stats('boss')
+	next_prompt = combat for boss
+
