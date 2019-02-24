@@ -17,7 +17,7 @@ while (RaccoonNPC.hitpoints > 0):
     print("="*22+"Turn:"+str(turn)+"="*22)
     action = input("What would you like to do?: \ntype 'roll' to attack\ntype 'run' to...run\ntype 'spec' to perform a special attack\n")
     if (action == "roll"):
-        PCroll=dice.roll(4,1)
+        PCroll=dice.roll(4,2)
         print("You deal: "+str(PCroll)+" damage to your opponent")
         RaccoonNPC.hitpoints -= PCroll
     elif (action == "run"):
