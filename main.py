@@ -17,14 +17,14 @@ def print_slow(str):
 
 
 def Class_Selection():
-     print("We will now ask you questions to determine your class!")
+     print("\nWe will now ask you questions to determine your class!")
      Q1 = ""
      Q2 = ""
      Q3 = ""
      Q4 = ""
      Q5 = ""
      while ((Q1 != "A") and (Q1 !="B") and (Q1 !="C") and (Q1 !="D")):
-         Q1 = input("you're at a house party, Where are you?\n\
+         Q1 = input("\nYou're at a house party, Where are you?\n\
                     A)In the corner drinking alone\n\
                     B)Mixing drinks\n\
                     C)Dancing in the middle of a circle\n\
@@ -109,16 +109,19 @@ def charRace():
 
     
     Class_Selection()
-
+print("\n"+"="*50)
 print("Welcome to the world of Mountains and Caves!")
-
+print("="*50+"\n")
 name = input('Enter your name: ')
-y = input("Are you sure this is your name(Y/N)")
-if y == 'y':
-        print("Ok lets move on!")
+flag = 'false'
+while (flag == 'false'):
+    y = input("Are you sure this is your name(Y/N)")
+    if y == 'y':
+        print("\nOk lets move on!")
         PCUpdated.name = name
         charRace()
-elif y == 'n':
+        flag = 'true'
+    elif y == 'n':
         while y =='n':
             x = input('Enter your name: ')
             y = input("Are you sure this is your name(Y/N)")
@@ -126,8 +129,10 @@ elif y == 'n':
                 print("Ok lets move on!")
                 PCUpdated.name = name
                 charRace()
+                flag = 'true'
 name = name.upper()
-print('Your adventure begins with the soothing sound of your mom screaming " WAKE UP', name, '", ')
+print('-'*50)
+print('\nYour adventure begins with the soothing sound of your mom screaming " WAKE UP', name, '", ')
 print('You shoot out of your bed realizing you have an exam today')
 print('Before even realizing it you were already out of bed and quickly changing to catch the bus')
 print('Unfortunately for you the 145 left before you could catch it! And there’s a sea of students in line for the next bus!')
@@ -190,7 +195,7 @@ PCUpdated.hitpoints = 18
 
 
 
-print('You continue on your harsh journey up the mountain, but alas you run into your first obstacle!')
+print('\nYou continue on your harsh journey up the mountain, but alas you run into your first obstacle!')
 print('Your going to have to take a detour!')
 print('You see one path leading upwards that might lead to a group of mutated racoons!(Path A)')
 print('The other path leads down back the mountain where you started!(Path B)')
@@ -259,7 +264,7 @@ else:
      sys.exit()
 
 PCUpdated.hitpoints = 18
-print('Once you make your way through the racoons, you continue your expedition to the top of SFU.')
+print('\nOnce you make your way through the racoons, you continue your expedition to the top of SFU.')
 print('After what felt like hours fighting through the snow, you finally make it to the convocation mall!')
 print('you encounter 3 different paths; left, right or center')
 countr = 0
@@ -286,8 +291,8 @@ while (countr < 3):
     countr += 1
 
 
-print('Once you tried 3 paths, you realize there is another path...')
-print('You quickly rush over to it and find your way to your class')
+print('\nOnce you tried 3 paths, you realize there is another path...')
+print('You quickly rush over to it and find your way to your class\n')
 ##boss fight
 print("!"*50)
 print("Welcome to MACM 101! Your professor this semester is Binay!")
@@ -341,7 +346,7 @@ while (BossNPC.hitpoints > 0):
                 print("Race: "+PCUpdated.race)
                 print("Class: "+PCUpdated.class1)
                 print("Weapon: "+PCUpdated.weapon)
-                quit()
+                sys.exit()
             tries -= 1
         print("You failed...time to retake it next semsester...")
         break
