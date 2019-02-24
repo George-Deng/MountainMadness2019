@@ -3,14 +3,16 @@ def P_WCHPTH():
 	print('Your going to have to take a detour!')
 	print('You see one path leading upwards that might lead to a group of mutated racoons!(Path A)')
 	print('The other path leads down back the mountain where you started!(Path B)')
+	next_prompt = P_CHSPTH():
 
+def P_CHSPTH():
 	decision = input("Which path will you take? ")
 	If (decision == 'B')
 		next_prompt = P_OPTB()
 	elif (decision == 'A')
 		next_prompt = P_OPTA()
 	else:
-		next_prompt = PWCHPTH()
+		next_prompt = P_CHSPTH()
 
 def P_OPTB():
 	print('You are a coward and the racoons can smell your cowardness and come eat you!')
@@ -59,4 +61,40 @@ def P_FNLITR()
 	print('You quickly rush over to it and find your way to your class\n')
 	print_stats('boss')
 	next_prompt = combat for boss
+
+
+#############new stuff 5:21 AM##########
+
+tries = 3
+counter = 0
+def P_SLP()
+	if roll >15
+		print("You succesfully fall asleep")
+            	print("You lose a chance in the midterm")
+		tries -= 1
+
+def P_FNSP()
+	if(counter == 1):
+            print("You've already used your special attack")
+            continue
+        print("You study extra hours!\nYou get an extra chance in the midterm!")
+        tries += 1
+        counter += 1
+
+def P_MDTM():
+	print(("!"*19)+str(tries)+" tries left"+("!"*19))
+        print("Solve:##equation here")
+	answer = input("Enter the answer: ")
+	if (answer.lower() == "t" or answer.lower() == "true"):
+		print("You passed MACM101! You won!")
+                print("Here are your stats: ")
+		print_stats('player')
+		next_prompt=P_WIN
+	elif (tries == 0):
+		print("You failed...time to retake it next semsester...")
+		next_prompt = P_DIED
+	else:
+		tries -= 1
+		next_prompt = P_MDTM()
+
 
